@@ -1,6 +1,6 @@
 import promise from 'es6-promise';
 
-class Dispatcher{
+class Dispatcher {
     constructor() {
         this._callbacks = [];
         this._promises = [];
@@ -11,7 +11,7 @@ class Dispatcher{
         return this._callbacks.length - 1;
     }
 
-    dispatch(payload){
+    dispatch(payload) {
         let resolves = [];
         let rejects = [];
 
